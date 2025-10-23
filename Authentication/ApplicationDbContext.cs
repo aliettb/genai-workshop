@@ -20,13 +20,13 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
         builder.Entity<IdentityRole>().HasData(
             new IdentityRole
             {
-                Id = Guid.NewGuid().ToString(),
+                Id = "cbfe03b8-8a14-4138-ad1d-58fd4536dfa7",
                 Name = "Owner",
                 NormalizedName = "OWNER"
             },
             new IdentityRole
             {
-                Id = Guid.NewGuid().ToString(),
+                Id = "c9880e29-3ca4-4d5d-9c26-5615dec36007",
                 Name = "User",
                 NormalizedName = "USER"
             }
